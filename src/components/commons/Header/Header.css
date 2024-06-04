@@ -1,0 +1,154 @@
+:root {
+    --header-color: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(35, 35, 36, 0.842) 35%, rgb(83, 83, 87) 70%, rgb(37, 37, 37) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: var(--header-color);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    height: 65px;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.leftside{
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.rightside{
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+}
+
+.option{
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(240, 223, 130);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu-icon img {
+    margin-right: 80px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+}
+
+@media screen and (max-width: 1400px) {
+    .leftside{
+        margin-left: 200px;
+    }
+    .rightside{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .leftside{
+        margin-left: 100px;
+    }
+    .rightside{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .option{
+        margin-left: 20px;
+    }
+
+    .leftside{
+        margin-left: 60px;
+    }
+}
+.rightside, .menu-icon {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .rightside {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+    .rightside {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: 60px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        padding: 10px;
+        border: 1px solid #444;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .leftside{
+        margin-left: 30px;
+    }
+
+    .menu-icon{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .leftside{
+        margin-left: 20px;
+    }
+
+    .menu-icon{
+        margin-right: -10px;
+    }
+}
