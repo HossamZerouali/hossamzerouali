@@ -1,5 +1,5 @@
 :root {
-    --header-color: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(35, 35, 36, 0.842) 35%, rgb(83, 83, 87) 70%, rgb(37, 37, 37) 100%);
+    --header-color: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(35, 35, 36, 0.842) 35%, rgb(0, 0, 0) 70%, rgb(37, 37, 37) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -12,12 +12,10 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
     background: var(--header-color);
     background-size: 200% 200%;
     animation: gradient 5s ease infinite;
     height: 65px;
-    width: 100%;
     color: white;
     align-items: center;
 }
@@ -59,7 +57,6 @@
 
 .dropdown-menu a {
     color: white;
-    padding: 10px;
     text-decoration: none;
 }
 
@@ -91,7 +88,7 @@
     }
 
     .leftside{
-        margin-left: 60px;
+        margin-left: 80px;
     }
 }
 .rightside, .menu-icon {
@@ -124,7 +121,6 @@
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        padding: 10px;
         border: 1px solid #444;
     }
 
@@ -145,10 +141,10 @@
 
 @media screen and (max-width: 500px) {
     .leftside{
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .menu-icon{
-        margin-right: -10px;
+        margin-right: -30px;
     }
 }
