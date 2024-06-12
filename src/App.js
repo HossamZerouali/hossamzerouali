@@ -1,12 +1,13 @@
+import React from 'react';
 import './App.css';
-import About from './components/commons/about-me/about';
 import Home from './sections/Home/Home';
+import Description from './sections/Description/Description';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <About />
+      <Home />
+      <Description />
     </div>
   );
 }

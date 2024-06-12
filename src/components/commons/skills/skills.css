@@ -1,0 +1,227 @@
+.skills-container {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.soft, .desig {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.soft::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.tit {
+    display: flex;
+    justify-content: start;
+}
+
+.title-skill h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.title-skill img {
+    width: 30px;
+    margin-right: 25px;
+}
+
+.tit h1 {
+    font-size: 1.5rem;
+}
+
+.title-skill-design img{
+    width: 30px;
+    margin-right: 25px;
+}
+
+.title-skill-design{
+    margin-left: 80px;
+}
+
+.desc-soft{
+    display: flex;
+    justify-content: start;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.desc-soft p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    padding-top: 15px;
+    padding-right: 100px;
+}
+
+.desig{
+    display: flex;
+}
+
+.desig p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    padding-top: 15px;
+    padding-right: 100px;
+}
+
+
+.descrip-soft{
+    margin-top: -15px;
+}
+
+
+.soft-container-title{
+    margin-top: -40px;
+    width: 750px;
+    display: block;
+    justify-content: center;
+}
+
+
+.soft-container-skills h2{
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+}
+
+.soft-container-skills{
+    width: 500px;
+    height: 175px;
+    margin-top: 25px;
+    background-color: rgb(111, 184, 159);
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tools {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tool {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    width: 150px;
+    height: auto;
+}
+
+.tool img {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.tool p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+
+.desig-container-skills h2{
+    font-size: 1.25rem;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+}
+
+.desig-container-skills{
+    margin-right: 80px;
+    width: 500px;
+    height: 105px;
+    margin-top: 25px;
+    background-color: rgb(111, 184, 159);
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+    .desig-container-skills, .soft-container-skills {
+        width: 400px;
+        margin-bottom: -20px;
+    }
+
+    .soft-container-skills{
+        padding-bottom: 0px;
+    }
+
+    .tool {
+        width: 100px;
+    }
+    
+    .tool img {
+        width: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .tool p {
+        margin-top: -5px;
+        font-size: 0.65rem;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .title-skill-design, .desc-soft {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .desig p{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+}

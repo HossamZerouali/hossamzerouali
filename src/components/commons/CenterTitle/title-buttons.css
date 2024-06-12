@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .title-desc {
     display: flex;
     flex-direction: column;
@@ -36,8 +37,8 @@
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
-    align-items: center;
 }
+
 .btn {
     padding: 15px;
     width: 200px;
@@ -59,7 +60,6 @@
     transform: translateY(4px);
 }
 
-
 .btn:hover {
     background-color: rgb(28, 59, 48);;
 }
@@ -75,6 +75,7 @@
     background-clip: padding-box;
     box-shadow: 0 0 0 1px rgb(121, 117, 117);
 }
+
 .down-arrow {
     width: 30px;
     animation: bounce 2s infinite;
@@ -294,4 +295,3 @@
         transform: translateY(2px);
     }
 }
-
