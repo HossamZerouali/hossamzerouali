@@ -1,12 +1,12 @@
 import './App.css';
-import Header from './components/commons/Header/Header';
-import TitleButtons from './components/commons/CenterTitle/title-buttons';
+import About from './components/commons/about-me/about';
+import Home from './sections/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <TitleButtons/>
+      <Home/>
+      <About />
     </div>
   );
 }

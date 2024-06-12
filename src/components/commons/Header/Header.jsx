@@ -16,9 +16,9 @@ const Header = () => {
             </div>
             <div className="rightside-container">
                 <div className="rightside">
-                    <a className="option" href="/sobre-mi">Sobre Mi</a>
-                    <a className="option" href="/proyectos">Proyectos</a>
-                    <a className="option" href="/contacto">Contacto</a>
+                    <a className="option" href="/sobre-mi">About Me</a>
+                    <a className="option" href="/proyectos">Projects</a>
+                    <a className="option" href="/contacto">Contact</a>
                 </div>
                 <div className="menu-icon" onClick={toggleMenu}>
                     <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(111, 184, 159)" alt="Menu Icon" />
