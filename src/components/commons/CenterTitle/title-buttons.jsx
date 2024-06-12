@@ -37,6 +37,9 @@ const TitleButtons = () => {
                     <img className='icon' src="https://api.iconify.design/simple-line-icons:social-github.svg?color=white" alt="Github Icon" /> Github
                 </button>
             </div>
+            <div className="arrow-container">
+                <img src="https://api.iconify.design/ep:bottom.svg?color=rgb(111, 184, 159)" className="down-arrow" alt="Scroll Down" />
+            </div>
         </div>
     );
 }

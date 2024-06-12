@@ -4,9 +4,9 @@ import './DropdownMenu.css';
 const DropdownMenu = () => {
     return (
         <div className="dropdown-menu show">
-            <a href="/sobre-mi">Sobre Mi</a>
-            <a href="/proyectos">Proyectos</a>
-            <a href="/contacto">Contacto</a>
+            <a href="/sobre-mi">About Me</a>
+            <a href="/proyectos">Projects</a>
+            <a href="/contacto">Contact</a>
         </div>
     );
 }
