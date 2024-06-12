@@ -20,7 +20,7 @@ const Header = () => {
                 <a className="option" href="/contacto">Contacto</a>
             </div>
             <div className="menu-icon" onClick={toggleMenu}>
-                <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(240, 223, 130)" alt="Menu Icon" />
+                <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(111, 184, 159)" alt="Menu Icon" />
             </div>
             {showMenu && <DropdownMenu />}
         </div>

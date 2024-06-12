@@ -10,9 +10,9 @@
 }
 
 .header{
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    background: var(--header-color);
     background-size: 200% 200%;
     animation: gradient 5s ease infinite;
     height: 65px;
@@ -25,7 +25,8 @@
     font-weight: 500;
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: rgb(111, 184, 159);
+    font-weight: 700;
 }
 
 .leftside{
@@ -43,7 +44,7 @@
 .option{
     margin-left: 40px;
     text-decoration: none;
-    color: rgb(240, 223, 130);
+    color: rgb(111, 184, 159);
     font-size: 18px;
     font-weight: 700;
 }
@@ -113,7 +114,7 @@
     .menu-icon {
         display: block;
         cursor: pointer;
-        margin-right: 60px;
+        margin-right: 20px;
     }
 
     .dropdown-menu {
@@ -135,7 +136,7 @@
     }
 
     .menu-icon{
-        margin-right: 10px;
+        margin-right: -40px;
     }
 }
 
