@@ -11,7 +11,7 @@ const TitleButtons = () => {
                 <p className='descripcion'>
                 I am a Software Engineering student with experience in
                 web and mobile development and design. I am always looking for new challenges
-                and opportunities to learn new things.
+                and opportunities to improve my skills.
                 </p>
             </div>
             <div className="buttons-container">

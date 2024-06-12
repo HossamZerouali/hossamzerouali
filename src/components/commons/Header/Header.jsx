@@ -14,13 +14,15 @@ const Header = () => {
             <div className="leftside">
                 <a className='name' href="/">Hossam Zerouali</a>
             </div>
-            <div className="rightside">
-                <a className="option" href="/sobre-mi">Sobre Mi</a>
-                <a className="option" href="/proyectos">Proyectos</a>
-                <a className="option" href="/contacto">Contacto</a>
-            </div>
-            <div className="menu-icon" onClick={toggleMenu}>
-                <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(111, 184, 159)" alt="Menu Icon" />
+            <div className="rightside-container">
+                <div className="rightside">
+                    <a className="option" href="/sobre-mi">Sobre Mi</a>
+                    <a className="option" href="/proyectos">Proyectos</a>
+                    <a className="option" href="/contacto">Contacto</a>
+                </div>
+                <div className="menu-icon" onClick={toggleMenu}>
+                    <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(111, 184, 159)" alt="Menu Icon" />
+                </div>
             </div>
             {showMenu && <DropdownMenu />}
         </div>
