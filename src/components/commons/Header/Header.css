@@ -114,7 +114,7 @@
     .menu-icon {
         display: block;
         cursor: pointer;
-        margin-right: 60px;
+        margin-right: 20px;
     }
 
     .dropdown-menu {
@@ -136,7 +136,7 @@
     }
 
     .menu-icon{
-        margin-right: 10px;
+        margin-right: -40px;
     }
 }
 
