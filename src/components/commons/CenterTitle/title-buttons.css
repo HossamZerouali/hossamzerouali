@@ -1,5 +1,5 @@
 .container {
-    padding-top: 80px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column; /* Cambio clave aquí */
     justify-content: center;
@@ -33,22 +33,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .btn {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px;
+    width: 200px;
+    font-size: 26px;
     color: #fff;
-    background-color: #007bff;
+    font-weight: 300;
+    font-family: 'Teko', sans-serif;
+    background-color: rgb(111, 184, 159);;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    justify-content: center;
     transition: background-color 0.3s ease;
 }
 
+.btn img {
+    margin-right: 10px;
+    width: 30px;
+    transform: translateY(4px);
+}
+
+
 .btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(28, 59, 48);;
 }
 
 @media screen and (max-width: 1750px) {
@@ -91,6 +104,19 @@
         margin-left: 275px;
         margin-right: 275px;
     }
+
+    .btn {
+        padding: 10px;
+        width: 150px;
+        font-size: 24px;
+        border-radius: 20px;
+    }
+    
+    .btn img {
+        margin-right: 10px;
+        width: 25px;
+        transform: translateY(4px);
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -114,6 +140,19 @@
         font-size: 24px;
         margin-left: 200px;
         margin-right: 200px;
+    }
+
+    .btn {
+        padding: 10px;
+        width: 125px;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+    
+    .btn img {
+        margin-right: 10px;
+        width: 20px;
+        transform: translateY(4px);
     }
 }
 
@@ -153,6 +192,19 @@
         margin-left: 105px;
         margin-right: 105px;
     }
+
+    .btn {
+        padding: 10px;
+        width: 110px;
+        font-size: 16px;
+        border-radius: 16px;
+    }
+    
+    .btn img {
+        margin-right: 10px;
+        width: 15px;
+        transform: translateY(2px);
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -180,5 +232,23 @@
         font-size: 16px;
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .buttons-container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+        width: 90px;
+        font-size: 12px;
+        border-radius: 16px;
+    }
+    
+    .btn img {
+        margin-right: 5px;
+        width: 12px;
+        transform: translateY(2px);
     }
 }

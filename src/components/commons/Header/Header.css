@@ -49,6 +49,12 @@
     font-weight: 700;
 }
 
+.option:hover{
+
+    color:black;
+
+}
+
 
 .menu-icon img {
     margin-top: 5px;
