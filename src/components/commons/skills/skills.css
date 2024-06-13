@@ -465,7 +465,8 @@
     .desc-soft .descrip-soft{
         font-size: 13px;
         margin-left: 0px;
-        margin-right: -10px;
+        margin-right: 0px;
+        text-align: justify;
     }
 
     .title-skill-design{
@@ -546,7 +547,8 @@
     .desc-soft .descrip-soft{
         font-size: 12px;
         margin-left: 0px;
-        margin-right: -10px;
+        margin-right: 0px;
+        text-align: justify;
     }
 
     .title-skill-design{
