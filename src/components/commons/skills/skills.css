@@ -52,10 +52,6 @@
     margin-right: 25px;
 }
 
-.title-skill-design{
-    margin-left: 80px;
-}
-
 .desc-soft{
     display: flex;
     justify-content: start;
@@ -68,24 +64,12 @@
     font-weight: 500;
     color: #333;
     padding-top: 15px;
-    padding-right: 100px;
+    padding-right: 80px;
 }
-
-.desig{
-    display: flex;
-}
-
-.desig p {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-    padding-top: 15px;
-    padding-right: 100px;
-}
-
 
 .descrip-soft{
-    margin-top: -15px;
+    margin-top: -10px;
+    margin-bottom: 45px;
 }
 
 
@@ -105,8 +89,7 @@
 }
 
 .soft-container-skills{
-    width: 500px;
-    height: 175px;
+    height: fit-content;
     margin-top: 25px;
     background-color: rgb(111, 184, 159);
     border-radius: 20px;
@@ -115,6 +98,8 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tools {
@@ -144,43 +129,121 @@
     font-size: 1rem;
 }
 
-
-.desig-container-skills h2{
-    font-size: 1.25rem;
-    margin-left: 15px;
-    margin-top: 5px;
-    color: white;
-}
-
-.desig-container-skills{
-    margin-right: 80px;
-    width: 500px;
-    height: 105px;
-    margin-top: 25px;
-    background-color: rgb(111, 184, 159);
-    border-radius: 20px;
-    padding: 10px;
+.info-right{
     display: block;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1150px) {
-    .soft-container-skills {
-        width: 400px;
-        height: 140px;
-    }
+.curriculum-text {
+    display: flex;
+    align-items: center;
+}
 
-    .desig-container-skills{
-        width: 400px;
-        height: 85px;
+.curriculum-text h2 {
+    margin-top: -5px;
+    margin-left: 42px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.curriculum-text a {
+    margin-top: -20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(111, 184, 159);
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-left: 7px;
+}
+
+.curriculum-text a:hover {
+    color: #007bff;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .skills-container {
+        width: 100%;
+        max-width: 1000px;
     }
 
     .soft-container-skills{
-        padding-bottom: 0px;
+        margin-top: 50px;
+        height: fit-content;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .tool {
+        width: 120px;
+    }
+    
+    .tool img {
+        width: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .tool p {
+        margin-top: -5px;
+        font-size: 0.75rem;
+    }
+
+    .curriculum-text h2 {
+        font-size: 0.95rem;
+        margin-left: 40px;
+    }
+    
+    .curriculum-text a {
+        font-size: 0.95rem;
+        margin-left: 5px;
+    }
+
+    .desc-soft{
+        display: flex;
+        justify-content: start;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .soft-container-skills h2{
+        font-size: 1.10rem;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .title-skill-design, .desc-soft {
+        margin-left: 30px;
+    }
+
+    .desc-soft .descrip-soft{
+        font-size: 14px;
+    }
+
+    .title-skill-design p {
+        font-size: 14px;
+    }
+
+    .soft-container-skills{
+        margin-top: 40px;
+        height: fit-content;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills-container {
+        width: 100%;
+        max-width: 850px;
+    }
+
+    .desc-soft p {
+        padding-right: 60px;
+    }
+
+    
     .tool {
         width: 100px;
     }
@@ -195,73 +258,73 @@
         margin-top: -5px;
         font-size: 0.65rem;
     }
+
+    .soft-container-skills h2{
+        font-size: 1.0rem;
+    }
+
+    .curriculum-text h2 {
+        font-size: 0.90rem;
+        margin-left: 28px;
+    }
     
+    .curriculum-text a {
+        font-size: 0.90rem;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 950px) {
-    .title-skill-design, .desc-soft {
-        margin-left: 30px;
+    .skills-container {
+        padding-right: 10px;
+        padding-left: 10px;
     }
-
-    .desc-soft .descrip-soft{
-        font-size: 14px;
-    }
-
-    .title-skill-design p {
-        font-size: 14px;
-    }
-    
 
 }
 
-@media (max-width: 850px) {
-    .soft-container-skills {
-        width: 325px;
-        height: 120px;
-    }
+@media (max-width: 900px) {
 
-    .desig-container-skills{
-        width: 325px;
-        height: 65px;
-    }
-    .soft-container-skills h2, .desig-container-skills h2 {
-        font-size: 1rem;
-        margin-left: 15px;
-        margin-top: 5px;
-        color: white;
+    .skills-container {
+        width: 100%;
+        max-width: 700px;
     }
 
     .soft-container-skills{
-        padding-bottom: 0px;
+        margin-top: 40px;
+        height: fit-content;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .tool {
-        width: 80px;
+        width: 85px;
     }
     
     .tool img {
-        width: 12px;
+        width: 15px;
         margin-right: 5px;
         margin-left: 10px;
     }
     
     .tool p {
         margin-top: -5px;
-        font-size: 0.5rem;
-    }
-
-    .title-skill-design, .desc-soft {
-        margin-left: 30px;
+        font-size: 0.55rem;
     }
 
     .desc-soft .descrip-soft{
         font-size: 12px;
         padding-right: 20px;
     }
-
-    .title-skill-design p {
-        font-size: 12px;
-        padding-right: 20px;
+    .curriculum-text h2 {
+        font-size: 0.75rem;
+        margin-left: 24px;
+    }
+    
+    .curriculum-text a {
+        margin-top: -15px;
+        font-size: 0.75rem;
+        margin-left: 5px;
     }
 
     .title-skill h1, .tit h1 {
@@ -270,19 +333,204 @@
         color: #333;
     }
 
-    .title-skill img {
-        width: 20px;
-        margin-right: 15px;
+}
+
+@media screen and (max-width: 750px) {
+    
+    .skills-container {
+        width: 100%;
+        max-width: 600px;
+        justify-content: center;
     }
 
-    .title-skill-design img{
-        width: 20px;
+
+    .soft-container-skills {
+        margin-top: -15px;
+        height: fit-content;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tool {
+        width: 150px;
+        height: 40px;
+    }
+    
+    .tool img {
+        width: 25px;
         margin-right: 15px;
+        margin-left: 20px;
+    }
+    
+    .tool p {
+        margin-top: -5px;
+        font-size: 0.85rem;
+    }
+
+    .desc-soft{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .soft-container-skills{
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .desc-soft .descrip-soft{
+        font-size: 14px;
+        padding-right: 0px;
+    }
+
+    .title-skill-design{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .curriculum-text h2 {
+        font-size: 1.0rem;
+        margin-left: 24px;
+    }
+    
+    .curriculum-text a {
+        margin-top: -20px;
+        font-size: 1.0rem;
+        margin-left: 5px;
+    }
+    .curriculum-text{
+        text-align: center;
+        margin-left: 68px;
     }
 }
 
-
 @media screen and (max-width: 675px) {
+    .skills-container {
+        width: 100%;
+        max-width: 500px;
+        justify-content: center;
+    }
+
+    .skills-container {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .soft-container-skills {
+        margin-top: -15px;
+        height: fit-content;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tool {
+        width: 120px;
+        height: 35px;
+    }
+    
+    .tool img {
+        width: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .tool p {
+        margin-top: -6px;
+        font-size: 0.80rem;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .desc-soft{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .soft-container-skills{
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .desc-soft .descrip-soft{
+        font-size: 13px;
+        margin-left: 0px;
+        margin-right: -10px;
+    }
+
+    .title-skill-design{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .curriculum-text h2 {
+        font-size: 0.95rem;
+        margin-left: 24px;
+    }
+    
+    .curriculum-text a {
+        margin-top: -20px;
+        font-size: 0.95rem;
+        margin-left: 5px;
+    }
+    .curriculum-text{
+        text-align: center;
+        margin-left: 28px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skills-container {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+    .skills-container {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .soft-container-skills {
+        margin-top: -15px;
+        height: fit-content;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tool {
+        width: 85px;
+        height: 35px;
+        border-radius: 15px;
+    }
+    
+    .tool img {
+        width: 15px;
+        margin-right: 5px;
+        margin-left: 8px;
+    }
+    
+    .tool p {
+        margin-top: -5px;
+        font-size: 0.65rem;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #333;
+    }
 
     .desc-soft{
         display: block;
@@ -295,13 +543,10 @@
         justify-content: center;
     }
     
-    .desc-soft p {
-        font-size: 0.5rem;
-    }
-
     .desc-soft .descrip-soft{
         font-size: 12px;
-        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: -10px;
     }
 
     .title-skill-design{
@@ -309,17 +554,119 @@
         align-items: center;
     }
 
-    .title-skill-design p {
-        font-size: 12px;
-        padding-right: 0px;
+    .curriculum-text h2 {
+        font-size: 0.75rem;
+        margin-left: 24px;
     }
-       
+    
+    .curriculum-text a {
+        margin-top: -15px;
+        font-size: 0.75rem;
+        margin-left: 5px;
+    }
+    .curriculum-text{
+        text-align: center;
+        margin-left: 12px;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 0.90rem;
+    }
+
+    .title-skill img {
+        width: 25px;
+        margin-right: 25px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 475px) {
+    .skills-container {
+        width: 100%;
+        max-width: 325px;
+        justify-content: center;
+        padding-right: 15px; /* Increased right padding */
+        padding-left: 15px; /* Increased left padding */
+    }
 
-}
+    .soft-container-skills {
+        padding: 5px;
+        margin-top: -15px;
+        height: fit-content;
+        width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
 
-@media screen and (max-width: 450px) {
+    .soft-container-skills h2{
+        margin-bottom: 12px;
+    }
 
+    .tool {
+        width: 75px;
+        height: 25px;
+        border-radius: 12px;
+    }
+    
+    .tool img {
+        width: 12px;
+        margin-right: 5px;
+        margin-left: 7px;
+    }
+    
+    .tool p {
+        margin-top: -8px;
+        font-size: 0.60rem;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .desc-soft{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-left: 20px; /* Increased left margin for more space */
+        margin-right: 20px; /* Increased right margin for more space */
+    }
+
+    .desc-soft h2{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .title-skill-design{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .curriculum-text h2 {
+        font-size: 0.65rem;
+        margin-left: 24px;
+    }
+    
+    .curriculum-text a {
+        margin-top: -15px;
+        font-size: 0.65rem;
+        margin-left: -15px;
+    }
+    .curriculum-text{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -5px;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 0.90rem;
+    }
+
+    .title-skill img {
+        width: 25px;
+        margin-right: 25px;
+    }
 }
