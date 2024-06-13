@@ -36,7 +36,7 @@
     justify-content: start;
 }
 
-.title-skill h1 {
+.title-skill h1, .tit h1 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #333;
@@ -45,10 +45,6 @@
 .title-skill img {
     width: 30px;
     margin-right: 25px;
-}
-
-.tit h1 {
-    font-size: 1.5rem;
 }
 
 .title-skill-design img{
@@ -171,9 +167,14 @@
 }
 
 @media screen and (max-width: 1150px) {
-    .desig-container-skills, .soft-container-skills {
+    .soft-container-skills {
         width: 400px;
-        margin-bottom: -20px;
+        height: 140px;
+    }
+
+    .desig-container-skills{
+        width: 400px;
+        height: 85px;
     }
 
     .soft-container-skills{
@@ -201,21 +202,118 @@
     .title-skill-design, .desc-soft {
         margin-left: 30px;
     }
+
+    .desc-soft .descrip-soft{
+        font-size: 14px;
+    }
+
+    .title-skill-design p {
+        font-size: 14px;
+    }
+    
+
 }
 
 @media (max-width: 850px) {
-    .desig p{
+    .soft-container-skills {
+        width: 325px;
+        height: 120px;
+    }
+
+    .desig-container-skills{
+        width: 325px;
+        height: 65px;
+    }
+    .soft-container-skills h2, .desig-container-skills h2 {
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-top: 5px;
+        color: white;
+    }
+
+    .soft-container-skills{
+        padding-bottom: 0px;
+    }
+
+    .tool {
+        width: 80px;
+    }
+    
+    .tool img {
+        width: 12px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    
+    .tool p {
+        margin-top: -5px;
+        font-size: 0.5rem;
+    }
+
+    .title-skill-design, .desc-soft {
+        margin-left: 30px;
+    }
+
+    .desc-soft .descrip-soft{
+        font-size: 12px;
         padding-right: 20px;
+    }
+
+    .title-skill-design p {
+        font-size: 12px;
+        padding-right: 20px;
+    }
+
+    .title-skill h1, .tit h1 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .title-skill img {
+        width: 20px;
+        margin-right: 15px;
+    }
+
+    .title-skill-design img{
+        width: 20px;
+        margin-right: 15px;
     }
 }
 
-@media (max-width: 750px) {
 
+@media screen and (max-width: 675px) {
 
-}
+    .desc-soft{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
 
-@media screen and (max-width: 650px) {
+    .soft-container-skills{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .desc-soft p {
+        font-size: 0.5rem;
+    }
 
+    .desc-soft .descrip-soft{
+        font-size: 12px;
+        padding-right: 0px;
+    }
+
+    .title-skill-design{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-skill-design p {
+        font-size: 12px;
+        padding-right: 0px;
+    }
+       
 }
 
 @media screen and (max-width: 550px) {
