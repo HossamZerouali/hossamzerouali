@@ -605,13 +605,13 @@
     .tool {
         width: 75px;
         height: 25px;
-        border-radius: 12px;
+        border-radius: 10px;
     }
     
     .tool img {
         width: 12px;
-        margin-right: 5px;
-        margin-left: 7px;
+        margin-right: 4px;
+        margin-left: 4px;
     }
     
     .tool p {
@@ -630,8 +630,8 @@
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        margin-left: 20px; /* Increased left margin for more space */
-        margin-right: 20px; /* Increased right margin for more space */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .desc-soft h2{
