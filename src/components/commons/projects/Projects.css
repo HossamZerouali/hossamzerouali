@@ -407,6 +407,7 @@
 
     .content-project p{
         font-size: 16px;
+        text-align: justify;
     }
 
     .download-button {
@@ -574,8 +575,8 @@
     }
 
     .project {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .project-links{
