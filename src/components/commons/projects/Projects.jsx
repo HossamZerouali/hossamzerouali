@@ -51,7 +51,10 @@ const Projects = () => {
                 <div className='project'>
                     <img className='project-image h' src={kbinImage} alt='project' />
                     <div className='content-project'>
-                        <h1>Kbin Social Clon & Redesign</h1>
+                        <div className='coming'>
+                            <h1>Kbin.Social Clon & Redesign</h1>
+                            <h2 className='res' >(No Resizable)</h2>
+                        </div>
                         <p>This project involved replicating the main functionalities of kbin.social over three sprints. In the first phase, the platform was cloned using Django (MVC server-side framework) and PostgreSQL (separate database architecture) to create a classic web app. In the second phase, a Level 2 REST API was designed and implemented in Python, complete with Swagger documentation. The final phase involved developing a responsive client web application using the React.js framework.</p>
                         <div className='project-dev'>
                             <h2 className='devwith'>Built with</h2>
@@ -73,7 +76,7 @@ const Projects = () => {
                     <div className='content-project'>
                         <div className='coming'>
                             <h1>Website for F1 fans</h1>
-                            <h2>In progress</h2>
+                            <h2>(In progress)</h2>
                         </div>
                         <p>An informational website for F1 fans, built using Angular with Firebase as the backend database and data fetched through a Node.js API powered by Express. This platform is designed to deliver comprehensive and up-to-date information on Formula 1, including detailed profiles of drivers and teams, the latest news, race results, and schedules. The platform aims to introduce exciting new features such as fan forums and live race chats, enhancing the experience to make it even more engaging and immersive for F1 enthusiasts.</p>
                         <div className='project-dev'>
