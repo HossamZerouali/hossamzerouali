@@ -123,7 +123,7 @@
 
     .images-footer{
         display: flex;
-        gap: 10px;
+        gap: 6px;
         justify-content: center;
     
     }
@@ -134,7 +134,7 @@
 
     .footer-end-text{
         margin-top: 20px;
-        gap: 8px;
+        gap: 4px;
     }
     
     .footer-end-text img{
