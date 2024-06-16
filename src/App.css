@@ -35,6 +35,11 @@ body, html {
   transform: translateY(0);
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(111, 184, 159) transparent;
+}
+
 @media screen and (max-width:1150px) {
 
   .scrollToTopBtn {
