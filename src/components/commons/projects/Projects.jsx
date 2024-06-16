@@ -4,6 +4,7 @@ import culturappImage from '../../../assets/culturapp_mock.png';
 import kbinImage from '../../../assets/kbin_mock.png';
 import f1Image from '../../../assets/f1_mock.png';
 import keyboardImage from '../../../assets/teclado_mock.png';
+import portfolioImage from '../../../assets/portfolio_mock.png';
 
 const Projects = () => {
         
@@ -38,7 +39,11 @@ const Projects = () => {
         const handleDownloadProjectClickKeyboard = () => {
             window.location.href = 'https://github.com/HossamZerouali/keyboard-optimization/releases';
         };
-        
+
+        const handleViewProjectClickPortfolio = () => {
+            window.location.href = 'https://github.com/HossamZerouali/hossamzerouali';
+        };
+
     return (
         <div className="projects-container">
             <div className='title-projects'>
@@ -121,6 +126,20 @@ const Projects = () => {
                         <div className='project-links'>
                             <button className='project-button' onClick={handleViewProjectClickKeyboard}>View Project</button>
                             <button className='download-button' onClick={handleDownloadProjectClickKeyboard}>Download Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='project'>
+                    <img className='project-image v' src={portfolioImage} alt='project' />
+                    <div className='content-project'>
+                        <h1>Personal Portfolio</h1>
+                        <p> I have developed my personal web portfolio using React, aiming for an attractive and pleasant design. My goal was to create a visually appealing and graphical interface that makes my projects easily visible and understandable. Additionally, I focused on facilitating contact and access to me for potential clients and collaborators.</p>
+                        <div className='project-dev'>
+                            <h2 className='devwith'>Built with</h2>
+                            <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg" alt="" />
+                        </div>
+                        <div className='project-links'>
+                            <button className='project-button' onClick={handleViewProjectClickPortfolio}>View Project</button>
                         </div>
                     </div>
                 </div>

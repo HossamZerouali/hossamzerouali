@@ -7,7 +7,14 @@ const Header = () => {
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
-    }
+    };
+
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <div className="header">
@@ -16,15 +23,15 @@ const Header = () => {
             </div>
             <div className="rightside-container">
                 <div className="rightside">
-                    <a className="option" href="/sobre-mi">About Me</a>
-                    <a className="option" href="/proyectos">Projects</a>
-                    <a className="option" href="/contacto">Contact</a>
+                    <a className="option" href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>About Me</a>
+                    <a className="option" href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
+                    <a className="option" href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
                 </div>
                 <div className="menu-icon" onClick={toggleMenu}>
                     <img src="https://api.iconify.design/heroicons-solid:menu.svg?color=rgb(111, 184, 159)" alt="Menu Icon" />
                 </div>
             </div>
-            {showMenu && <DropdownMenu />}
+            {showMenu && <DropdownMenu onOptionClick={toggleMenu} />}
         </div>
     );
 }
