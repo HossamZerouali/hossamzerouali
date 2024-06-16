@@ -3,7 +3,7 @@ import './title-buttons.css';
 
 const TitleButtons = () => {
     const handleDownloadCVClick = () => {
-        window.location.href = 'https://drive.google.com/uc?export=download&id=1URSXA1rwHUBrXanpeGGJK85fDJ8jBJJL';
+        window.location.href = 'https://drive.google.com/uc?export=download&id=1vZCL22ZPMTJRDwkjVpOJytpPMpATX3Te';
     };
 
     const handleLinkedInClick = () => {
