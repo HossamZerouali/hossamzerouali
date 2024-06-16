@@ -74,6 +74,10 @@
     background-color: #fff;
     background-clip: padding-box;
     box-shadow: 0 0 0 1px rgb(121, 117, 117);
+    cursor: pointer;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .down-arrow {

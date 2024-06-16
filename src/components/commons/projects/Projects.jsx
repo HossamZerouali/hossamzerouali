@@ -4,17 +4,22 @@ import culturappImage from '../../../assets/culturapp_mock.png';
 import kbinImage from '../../../assets/kbin_mock.png';
 import f1Image from '../../../assets/f1_mock.png';
 import keyboardImage from '../../../assets/teclado_mock.png';
+import portfolioImage from '../../../assets/portfolio_mock.png';
 
 const Projects = () => {
         
-        const handleViewProjectClick = () => {
-            window.location.href = 'URL_DEL_PROYECTO';
+        const handleViewProjectClickCulturApp = () => {
+            window.location.href = 'https://github.com/HossamZerouali/culturapp';
         };
     
-        const handleDownloadProjectClick = () => {
-            window.location.href = 'https://github.com/pes2324q2-gei-upc/CulturApp_Front/releases';
+        const handleDownloadProjectClickCulturApp = () => {
+            window.location.href = 'https://github.com/HossamZerouali/culturapp/releases/tag/culturapp';
         };
-    
+        
+        const handleViewProjectClickKbinSocial = () => {
+            window.location.href = 'https://github.com/HossamZerouali/kbinproject';
+        };
+
         const handleVisitClonClick = () => {
             window.location.href = 'https://asw-projecte-kbin-social-alphatretze.onrender.com/';
         };
@@ -22,6 +27,23 @@ const Projects = () => {
         const handleVisitRedesignClick = () => {
             window.location.href = 'https://asw-projecte-kbin-social-react.onrender.com/';
         };
+
+        const handleViewProjectClickF1Web = () => {
+            window.location.href = 'https://github.com/HossamZerouali/f1-website-angular';
+        };
+
+        const handleViewProjectClickKeyboard = () => {
+            window.location.href = 'https://github.com/HossamZerouali/f1-website-angular';
+        };
+
+        const handleDownloadProjectClickKeyboard = () => {
+            window.location.href = 'https://github.com/HossamZerouali/keyboard-optimization/releases';
+        };
+
+        const handleViewProjectClickPortfolio = () => {
+            window.location.href = 'https://github.com/HossamZerouali/hossamzerouali';
+        };
+
     return (
         <div className="projects-container">
             <div className='title-projects'>
@@ -43,8 +65,8 @@ const Projects = () => {
                             <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-gcloud.svg" alt="" />
                         </div>
                         <div className='project-links'>
-                            <button className='project-button' onClick={handleViewProjectClick}>View Project</button>
-                            <button className='download-button' onClick={handleDownloadProjectClick}>Download Project</button>
+                            <button className='project-button' onClick={handleViewProjectClickCulturApp}>View Project</button>
+                            <button className='download-button' onClick={handleDownloadProjectClickCulturApp}>Download Project</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +87,7 @@ const Projects = () => {
                             <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg" alt="" />
                         </div>
                         <div className='project-links'>
-                            <button className='project-button' onClick={handleViewProjectClick}>View Project</button>
+                            <button className='project-button' onClick={handleViewProjectClickKbinSocial}>View Project</button>
                             <button className='download-button' onClick={handleVisitClonClick}>Visit Clon</button>
                             <button className='download-button' onClick={handleVisitRedesignClick}>Visit Redesign</button>
                         </div>
@@ -87,7 +109,7 @@ const Projects = () => {
                             <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-firebase.svg" alt="" />
                         </div>
                         <div className='project-links'>
-                            <button className='project-button' onClick={handleVisitClonClick}>View Project</button>
+                            <button className='project-button' onClick={handleViewProjectClickF1Web}>View Project</button>
                         </div>
                     </div>
                 </div>
@@ -102,8 +124,22 @@ const Projects = () => {
                             <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-class.svg" alt="" />
                         </div>
                         <div className='project-links'>
-                            <button className='project-button' onClick={handleVisitClonClick}>View Project</button>
-                            <button className='download-button' onClick={handleDownloadProjectClick}>Download Project</button>
+                            <button className='project-button' onClick={handleViewProjectClickKeyboard}>View Project</button>
+                            <button className='download-button' onClick={handleDownloadProjectClickKeyboard}>Download Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='project'>
+                    <img className='project-image v' src={portfolioImage} alt='project' />
+                    <div className='content-project'>
+                        <h1>Personal Portfolio</h1>
+                        <p> I have developed my personal web portfolio using React, aiming for an attractive and pleasant design. My goal was to create a visually appealing and graphical interface that makes my projects easily visible and understandable. Additionally, I focused on facilitating contact and access to me for potential clients and collaborators.</p>
+                        <div className='project-dev'>
+                            <h2 className='devwith'>Built with</h2>
+                            <img className='img-dev' src="https://api.iconify.design/vscode-icons:file-type-reactjs.svg" alt="" />
+                        </div>
+                        <div className='project-links'>
+                            <button className='project-button' onClick={handleViewProjectClickPortfolio}>View Project</button>
                         </div>
                     </div>
                 </div>

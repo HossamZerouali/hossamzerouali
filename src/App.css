@@ -5,3 +5,61 @@ body, html {
   overflow-x: hidden;
 }
 
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  z-index: 100;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(111, 184, 159);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollToTopBtn:hover {
+  background-color: rgb(28, 59, 48);
+}
+
+.scrollToTopBtn img {
+  margin-right: 0;
+  width: 50px;
+  transform: translateY(0);
+}
+
+@media screen and (max-width:1150px) {
+
+  .scrollToTopBtn {
+      padding: 14px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .scrollToTopBtn img {
+      width: 25px;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .scrollToTopBtn {
+      padding: 12px;
+      width: 25px;
+      height: 25px;
+  }
+  
+  .scrollToTopBtn img {
+      width: 15px;
+  }
+  
+}

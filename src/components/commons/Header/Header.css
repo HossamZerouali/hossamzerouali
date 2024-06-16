@@ -1,15 +1,8 @@
-:root {
-    --header-color: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(35, 35, 36, 0.842) 35%, rgb(0, 0, 0) 70%, rgb(37, 37, 37) 100%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.header{
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -18,9 +11,18 @@
     height: 65px;
     color: white;
     align-items: center;
+    background-color: transparent;
 }
 
-.name{
+.header--visible {
+    top: 0;
+}
+
+.header--hidden {
+    top: -100px;
+}
+
+.name {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
@@ -29,19 +31,19 @@
     font-weight: 700;
 }
 
-.leftside{
+.leftside {
     display: flex;
     align-items: center;
     margin-left: 300px;
 }
 
-.rightside-container{
+.rightside-container {
     display: flex;
     align-items: center;
     margin-right: 300px;
 }
 
-.option{
+.option {
     margin-left: 40px;
     text-decoration: none;
     color: rgb(111, 184, 159);
@@ -49,12 +51,9 @@
     font-weight: 700;
 }
 
-.option:hover{
-
-    color:black;
-
+.option:hover {
+    color: black;
 }
-
 
 .menu-icon img {
     margin-top: 5px;
@@ -71,32 +70,32 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .leftside{
+    .leftside {
         margin-left: 200px;
     }
-    .rightside-container{
+    .rightside-container {
         margin-right: 200px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .leftside{
+    .leftside {
         margin-left: 100px;
     }
-    .rightside-container{
+    .rightside-container {
         margin-right: 100px;
     }
 }
 
 @media screen and (max-width: 980px) {
-    .option{
+    .option {
         margin-left: 20px;
     }
-
-    .leftside{
+    .leftside {
         margin-left: 80px;
     }
 }
+
 .rightside, .menu-icon {
     display: none;
 }
@@ -116,7 +115,7 @@
         display: none;
     }
 
-    .rightside-container{
+    .rightside-container {
         margin-right: 10px;
     }
 
@@ -140,21 +139,19 @@
 }
 
 @media screen and (max-width: 650px) {
-    .leftside{
+    .leftside {
         margin-left: 30px;
     }
     .menu-icon {
         margin-right: 30px;
     }
-    
 }
 
 @media screen and (max-width: 500px) {
-    .leftside{
+    .leftside {
         margin-left: 40px;
     }
     .menu-icon {
         margin-right: 30px;
     }
-
 }
