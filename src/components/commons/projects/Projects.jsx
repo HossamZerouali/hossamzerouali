@@ -130,7 +130,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className='project'>
-                    <img className='project-image v' src={portfolioImage} alt='project' />
+                    <img className='project-image h hh' src={portfolioImage} alt='project' />
                     <div className='content-project'>
                         <h1>Personal Portfolio</h1>
                         <p> I have developed my personal web portfolio using React, aiming for an attractive and pleasant design. My goal was to create a visually appealing and graphical interface that makes my projects easily visible and understandable. Additionally, I focused on facilitating contact and access to me for potential clients and collaborators.</p>
