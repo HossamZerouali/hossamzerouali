@@ -1,16 +1,32 @@
 import React from 'react';
 import './title-buttons.css';
+import ReactGA from 'react-ga';
 
 const TitleButtons = () => {
     const handleDownloadCVClick = () => {
-        window.location.href = 'https://drive.google.com/uc?export=download&id=1vZCL22ZPMTJRDwkjVpOJytpPMpATX3Te';
+        ReactGA.event({
+            category: 'CV',
+            action: 'download',
+            label: 'Download CV'
+        });
+        window.location.href = 'https://drive.google.com/uc?export=download&id=1zgh2O8_9ShbDPYhlAZELjZJ5Plv_hX9-';
     };
-
+    
     const handleLinkedInClick = () => {
+        ReactGA.event({
+            category: 'Profile',
+            action: 'navigate',
+            label: 'LinkedIn Profile'
+        });
         window.location.href = 'https://www.linkedin.com/in/hossam-zerouali-385643305/';
     };
-
+    
     const handleGithubClick = () => {
+        ReactGA.event({
+            category: 'Profile',
+            action: 'navigate',
+            label: 'GitHub Profile'
+        });
         window.location.href = 'https://github.com/HossamZerouali';
     };
 
